@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: 123456
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  redis:
+    hostName: 127.0.0.1
+    port: 6379
+    database: 0
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    
+server:
+  port: 8082
+  context-path: /sboot
+application:
+  hello: Hello spring boot
+  
+info:
+  app:
+    name: ecs
+    version: 1.0.0
+  build:
+    artifactId: spring boot demo
+    version: spring boot demo 1.0.1
+commconfig:
+   userName: will
+   passWord: will

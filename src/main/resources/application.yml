@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: 123456
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 1
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+server:
+  port: 8082
+  context-path: /sboot
+application:
+  hello: Hello spring boot
